@@ -26,7 +26,7 @@ if(firstChoice == "A"):
   print(" B. moonshine")
   print(" C. a beer")
  
-# Have the reader type the letter of what drink they want 
+  # Have the reader type the letter of what drink they want 
   drinkChoice = input("What do you order? Please enter a letter A through C: ")
   print( )
 
@@ -36,7 +36,7 @@ if(firstChoice == "A"):
     print("~ The End~")
     print( )
 
-# If the reader picked the beer or boilermaker, display the message that they'll be on their way after
+  # If the reader picked the beer or boilermaker, display the message that they'll be on   their way after
   else:
     print("You finish your drink and continue on your way")
     print("~ The End ~")
@@ -48,12 +48,29 @@ if(firstChoice == "B"):
   horseAnswer = input("Enter the number of horses you have left:" )
   horseAnswer = int(horseAnswer)
   print( )
-# If they entered the correct answer, display message
+  # If they entered the correct answer, display message
   if(horseAnswer == 15):
     print("The sheriff says, 'Boy you're pretty, would you like to be my deputy?' You gladly accept the position.")
     print("~ The End ~")
 
-# If they answer incorrectly, display message telling you to get lost
+  # If they answer incorrectly, display message telling you to get lost
   else:
     print("The sheriff shakes his head and tells you good luck")
     print("~ The End ~")
+
+# If they picked the outlaw, ask the reader if he want to join the outlaws posse
+if(firstChoice == "C"): 
+  print("You mosey on over to the oulaw in the shadows and he asks, 'Say, would you like to join my posse?'")
+  outlawMan = input("Enter 'Y' or 'N':")
+  print( )
+  
+  # Reader enters Y, display a message that you rob the bank and get rich
+  if(outlawMan == "Y"):
+    print("You and your new posse rob the local bank and become wanted criminals.")
+    print("~ The End ~")
+
+  # Reader enters N, display a message that they ride off into the sunset alone
+  else:
+    print("You decide against a life of crime and ride off into the sunset alone.")
+    print("~ The End ~")
+    

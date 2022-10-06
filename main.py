@@ -46,4 +46,14 @@ if(firstChoice == "B"):
   print("You ride past the sheriff to say hello and he asks you a questions")
   print("If you had 20 horses, but sold 5, how many would you have left?")
   horseAnswer = input("Enter the number of horses you have left:" )
-  horseAnswer = int(horseAnwer)
+  horseAnswer = int(horseAnswer)
+  print( )
+# If they entered the correct answer, display message
+  if(horseAnswer == 15):
+    print("The sheriff says, 'Boy you're pretty, would you like to be my deputy?' You gladly accept the position.")
+    print("~ The End ~")
+
+# If they answer incorrectly, display message telling you to get lost
+  else:
+    print("The sheriff shakes his head and tells you good luck")
+    print("~ The End ~")
